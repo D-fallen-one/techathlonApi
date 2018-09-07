@@ -16,3 +16,9 @@ def defaultWithParams(request,to,frm):
         'from': frm,
     }
     return JsonResponse(data)
+
+def suggestedBooks(request, isbn):
+    print(isbn)
+    return JsonResponse({
+        'data': 'yes'
+    })
